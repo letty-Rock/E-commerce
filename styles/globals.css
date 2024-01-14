@@ -178,27 +178,4 @@ font-weight: bold;
       }
   }
   
-  /*
-  @keyframes smoke1 {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-45px);
-      opacity: 1;
-    }
-    70% {
-      transform: translateY(-65px);
-      opacity: 1;
-      width: 50%;
-      margin-left: 30px;
-    }
-  
-    100% {
-      transform: translateY(-145px);
-      opacity: 0.2;
-      width: 0%;
-      margin-left: 60px;
-    }
-  }
-  
+ 
