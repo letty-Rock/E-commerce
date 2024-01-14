@@ -3,8 +3,12 @@
     padding: 0;
     margin: 0;
 }
-body{
+body  {
+   
     font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #ffffff;
 }
 .header-inner-content{
     max-width: 1300px;
@@ -110,4 +114,91 @@ font-weight: bold;
 
 .header-bottom-side-right img{
     width: 115%;
+    
 }
+
+.wrapper{
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+}
+
+
+.cup img{
+    width: 150px;
+    height: 150px;
+    position: center;
+    
+}
+
+.smoke{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 25px;
+    justify-content: absolute;
+    
+}
+
+.smoke span {
+    position: relative;
+    bottom: -80px;
+    display: block;
+    margin: 0 2px 50px;
+    min-width: 2px;
+    height: 50px;
+    background: #000000;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    opacity: 0;
+    filter: blur(7px);
+    animation-delay: calc(var(--v)*0.5s) ;
+}
+
+
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0) scaleX(1);
+    }
+    15%{
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-150px) scaleX(5);
+      }
+      95%{
+        opacity: 0;
+      }
+    100% {
+        transform: translateY(-300px) scaleX(10);
+      }
+  }
+  
+  /*
+  @keyframes smoke1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-45px);
+      opacity: 1;
+    }
+    70% {
+      transform: translateY(-65px);
+      opacity: 1;
+      width: 50%;
+      margin-left: 30px;
+    }
+  
+    100% {
+      transform: translateY(-145px);
+      opacity: 0.2;
+      width: 0%;
+      margin-left: 60px;
+    }
+  }
+  
