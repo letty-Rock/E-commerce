@@ -52,7 +52,7 @@ nav ul{
 
 .nav-icon-container img:first-child{
    margin-right: 1rem;
-
+   
 }
 nav ul li {
     color: #fff;
@@ -61,5 +61,53 @@ nav ul li {
 }
 
 nav ul li:hover{
+transform: translateY(-5px);
+transition: all 0.2;
+font-weight: bold;
+}
+.menu-button{
+    display: none;
+}
+.header-bottom-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+}
+.header-bottom-side-left{
+    height: 100%;
+    flex-basis: 50%;
+}
+.header-bottom-side-left h2 {
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+.header-bottom-side-left p {
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.header-bottom-side-left button{
+    background-color: #0084ff;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+.header-bottom-side-left button:hover{
+    background-color: #004c94;
+}
 
+.header-bottom-side-right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-side-right img{
+    width: 115%;
 }
