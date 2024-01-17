@@ -72,6 +72,11 @@ font-weight: bold;
 .menu-button{
     display: none;
 }
+
+header{
+    background-image: radial-gradient(#fff, #c7c7c7);
+}
+
 .header-bottom-side{
     display: flex;
     align-items: center;
