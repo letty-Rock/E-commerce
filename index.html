@@ -33,10 +33,10 @@
     </div>
         
         
-    <div class="navbar show-menu"> <!-- engloba toda a nav, no css configuramos para que dentro dessa classe todas as divs tenham o display:flex, justify-content: space-between.-->
-     <div class="header-inner-content "> <!--dentro do css configuramos essa classe com o tamanho de 1300px-->
+    <div class="navbar" onclick="toggleMenu()" > <!-- engloba toda a nav, no css configuramos para que dentro dessa classe todas as divs tenham o display:flex, justify-content: space-between.-->
+     <div class="header-inner-content " > <!--dentro do css configuramos essa classe com o tamanho de 1300px-->
         <h1 class="logo">HEAD<span>SET</span></h1>
-        <nav>
+        <nav id="menu-button">
             <ul>
                 <li>Home</li>
                 <li>Produtos</li>
@@ -62,7 +62,7 @@
                     <button>Ver Agora</button>
                 </div>
             <div class="header-bottom-side-right">
-                <img src="/img/Phonedourado.jpg" alt="">
+                <img src="/img/Phonedourado-removebg-preview.png" alt="">
             </div>
                 
         </div>
@@ -71,15 +71,10 @@
     </div>
         
   </header>
- <script>
-    const navbar = document.querySelector(".navbar");
-    const menuButton = document.querySelector(".menu-button");
-
-    menuButton.addEventListener("click", () => {
-        navbar.classList.toggle("show-menu");
-});
-
- </script>
+<main>
+    <div class="gray-background"></div>
+    <div class="page-inner-content"></div>
+</main>
 
 
    

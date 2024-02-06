@@ -9,7 +9,15 @@ var i = setInterval(function () {
 
 }, 4000);
 
-
+function toggleMenu() {
+    var menuBox = document.getElementById('menu-button');    
+    if(menuBox.style.display == "block") { // if is menuBox displayed, hide it
+      menuBox.style.display = "none";
+    }
+    else { // if is menuBox hidden, display it
+      menuBox.style.display = "block";
+    }
+  }
 
 /*
 $(document).ready(function()
