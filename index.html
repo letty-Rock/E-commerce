@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
     <link rel="stylesheet" href="/styles/globals.css">
-    <script src="/Script/script.js"></script>
+   <script src="/Script/script.js"></script>
 </head>
 <body>
-    <div class="teste" id="loading" style="display: block">
+    <div id="loading" style="display: block">
         <div class="wrapper">
           <div class="smoke">
                     <span style="--v:1;"></span>
@@ -26,14 +26,15 @@
           </div>
             <div class="cup" >
                 <div>
-                    <img src="/img/mug-alt.png" alt="">
+                  <!-- <img src="/img/mug-alt.png" alt="">-->
                 </div>
             </div>
         </div>
-        </div>
-        <div id="conteudo" style="display: none;">
-    <div class="navbar"> <!-- engloba toda a nav, no css configuramos para que dentro dessa classe todas as divs tenham o display:flex, justify-content: space-between.-->
-     <div class="header-inner-content"> <!--dentro do css configuramos essa classe com o tamanho de 1300px-->
+    </div>
+        
+        
+    <div class="navbar show-menu"> <!-- engloba toda a nav, no css configuramos para que dentro dessa classe todas as divs tenham o display:flex, justify-content: space-between.-->
+     <div class="header-inner-content "> <!--dentro do css configuramos essa classe com o tamanho de 1300px-->
         <h1 class="logo">HEAD<span>SET</span></h1>
         <nav>
             <ul>
@@ -68,6 +69,19 @@
 
     </div>
     </div>
+        
   </header>
+ <script>
+    const navbar = document.querySelector(".navbar");
+    const menuButton = document.querySelector(".menu-button");
+
+    menuButton.addEventListener("click", () => {
+        navbar.classList.toggle("show-menu");
+});
+
+ </script>
+
+
+   
 </body>
 </html>
